@@ -7,7 +7,7 @@ namespace VoteSkip
     internal class Config
     {
         public bool Enabled { get; set; } = false;
-        public int MinVotesForVoteSkip { get; set; }
+        public int MinVotesForVoteSkip { get; set; } = 10;
         public string VoteSkipPrefix { get; set; } = "!voteskip";
     }
 }

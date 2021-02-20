@@ -18,7 +18,7 @@ namespace VoteSkip
             {
                 Container.BindLoggerAsSiraLogger(logger);
                 Container.BindInstance(config).AsSingle();
-                Container.BindInterfacesAndSelfTo<ChatManager>();
+                Container.BindInterfacesAndSelfTo<ChatManager>().AsSingle();
             });
 
             zenjector.On<MenuInstaller>().Pseudo(Container =>

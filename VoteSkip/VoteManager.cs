@@ -1,7 +1,6 @@
 ﻿using ChatCore.Interfaces;
 using System;
 using System.Collections.Generic;
-using System.Text;
 using Zenject;
 
 namespace VoteSkip

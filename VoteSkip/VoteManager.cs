@@ -38,8 +38,8 @@ namespace VoteSkip
                 if (_votes >= _config.MinVotesForVoteSkip && !_insuranceLock)
                 {
                     _insuranceLock = true;
-                    _chatManager.SendMessage(channel, "Too many people did not like this song. Sadge");
-                    _pauseController.HandleMenuButtonTriggered();
+                    _chatManager.SendMessage(channel, "Too many people didn't like this song. Sadge");
+                    _pauseController.HandlePauseMenuManagerDidPressMenuButton();
                 }
             }
         }
